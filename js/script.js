@@ -75,10 +75,11 @@ createApp({
                  this.slideIndex--
              }
         },
-        thumbClick(e){
+        thumbClick(index){
             //this.slideIndex =  
-            console.log(e);
-            //if (this.slides.image === )
+            //console.log(e);
+            this.slideIndex = index;
+            
 
         }
     }
