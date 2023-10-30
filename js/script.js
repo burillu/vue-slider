@@ -1,4 +1,4 @@
-const slides = [
+/*const slides = [
     {
         image: 'img/01.webp',
         title: 'Marvel\'s Spiderman Miles Morale',
@@ -20,7 +20,7 @@ const slides = [
         title: "Marvel's Avengers",
         text: 'Marvel\'s Avengers is an epic, third-person, action-adventure game that combines an original, cinematic story with single-player and co-operative gameplay.',
     }
-];
+];*/
 
 //console.log(slides);
 
@@ -53,33 +53,33 @@ createApp({
                     text: 'Marvel\'s Avengers is an epic, third-person, action-adventure game that combines an original, cinematic story with single-player and co-operative gameplay.',
                 }
             ],
-            slideIndex:0,
+            slideIndex: 0,
             className: 'thumb'
         }
     },
     methods: {
-        nextSlide(){
-            if (this.slideIndex === slides.length -1) {
-               this.slideIndex=0; 
-            }else{
+        nextSlide() {
+            if (this.slideIndex === this.slides.length - 1) {
+                this.slideIndex = 0;
+            } else {
                 this.slideIndex++
             }
-            
-            
-            
+
+
+
         },
-        prevSlide(){
-            if (this.slideIndex === 0 ) {
-                this.slideIndex=slides.length -1; 
-             }else{
-                 this.slideIndex--
-             }
+        prevSlide() {
+            if (this.slideIndex === 0) {
+                this.slideIndex = this.slides.length - 1;
+            } else {
+                this.slideIndex--
+            }
         },
-        thumbClick(index){
+        thumbClick(index) {
             //this.slideIndex =  
             //console.log(e);
             this.slideIndex = index;
-            
+
 
         }
     }
