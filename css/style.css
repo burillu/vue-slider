@@ -47,6 +47,12 @@
     height: calc((100%) / 5);
     opacity: 0.5;
 }
+.thumb:hover{
+    /* filter: brightness(); */
+    opacity: 0.8;
+    border: 1px solid gray;
+
+}
 
 .thumb img {
     width: 100%;
